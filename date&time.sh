@@ -4,6 +4,6 @@
 starttime=$(date +%S)
 sleep 10
 ENDTIME=$(date +%s)
-TOTALTIME=$((ENDTIME-starttime))
+TOTALTIME=$((ENDTIME-$starttime))
 echo "script executed in : $TOTALTIME seconds"
 
