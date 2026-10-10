@@ -1,3 +1,5 @@
 #!/bin/bash
-DATE=$(date)
-echo "timestamp executed : $DATE"
+DATE=$(date +%F)
+echo "timestamp executed : $DATE
+
+"
