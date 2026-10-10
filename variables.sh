@@ -13,5 +13,6 @@ echo "i miss u"
 echo " please enter your PIN Number "
 read PIN_NUMBER #here pinnumber is a variable
 echo "pin number is : $PIN_NUMBER"
+echo " please enter your secret PIN Number "
 read -s SECRET_PIN_NUMBER #using s will hide ur password on screen
-echo "ur secret pin number is : "$SECRET_PIN_NUMBER"
+echo "ur secret pin number is : $SECRET_PIN_NUMBER"
