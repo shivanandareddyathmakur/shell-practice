@@ -3,3 +3,4 @@
 #NAME=("linux" "shell" "docker")
 FRIENDS=("shiva" "siva" "sai" "shashi")
 echo "all are best friends : ${FRIENDS[@]}"
+echo "tall guy is : ${FRIENDS[0]}"
