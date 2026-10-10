@@ -1,6 +1,7 @@
 #!/bin/bash
-#$1="swetha"
-#$2="shiva"
+$1=swetha
+$2=shiva
+
 PERSON1=$1
 PERSON2=$2
 echo "$PERSON1 : Hi $PERSON2, how are you?"
