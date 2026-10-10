@@ -2,5 +2,6 @@
 #everything in shell is considered as string
 NUMBER1=100
 NUMBER2=200
-SUM=$(($NUMBER1+NUMBER2))
+NAME=Devops
+SUM=$(($NUMBER1+$NUMBER2+$NAME))
 echo "sum of two numbers is : ${SUM}"
