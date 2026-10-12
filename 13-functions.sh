@@ -8,7 +8,7 @@ fi
 
 VALIDATE(){
     if [ $1 -ne 0 ]; then
-        echo "ERROR:: installing $2 is faiulre"
+        echo "ERROR:: installing $2 has been failed"
         exit 1
     else 
         echo "$2 installation is successfull"
