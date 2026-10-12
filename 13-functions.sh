@@ -7,16 +7,16 @@ Y="\e[33m"
 N="\e[0m"
 
 if [ $USER_ID -ne 0 ]; then
-    echo "$R ERROR $N:: please run this command with root privelege"
+    echo -e "$R ERROR $N:: please run this command with root privelege"
     exit 1
 fi
 
 VALIDATE(){
     if [ $1 -ne 0 ]; then
-        echo "$R ERROR $N:: installing $2 has been $R failed $N"
+        echo -e "$R ERROR $N:: installing $2 has been $R failed $N"
         exit 1
     else 
-        echo "$2 installation is $G successfull $N"
+        echo -e "$2 installation is $G successfull $N"
     fi
 }
 
