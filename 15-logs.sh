@@ -7,7 +7,7 @@ Y="\e[33m"
 N="\e[0m"
 LOGS_FOLDER="/var/log/shell-script"
 SCRIPT_FILE=$( echo $0 |cut -d "." -f1 )
-LOG_FILE="$LOGS_FOLDER/$SCRIPT_FOLDER.log"
+LOG_FILE="$LOGS_FOLDER/$SCRIPT_FILE.log"
 mkdir -p $LOGS_FOLDER
 
 if [ $USER_ID -ne 0 ]; then
