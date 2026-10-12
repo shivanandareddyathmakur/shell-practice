@@ -27,14 +27,14 @@ VALIDATE(){
 }
 
 #if we use tee then it'll dispaly over and will also be saved logs file
-dnf install mysql -y &>>$LOG_FILE | tee -a $LOG_FILE #&>>$LOG_FILE only in logs
+dnf install mysql -y | tee -a $LOG_FILE #&>>$LOG_FILE only in logs
 VALIDATE $? "mysql"
 
-dnf install nginx -y &>>$LOG_FILE | tee -a $LOG_FILE #&>>$LOG_FILE only in logs
+dnf install nginx -y | tee -a $LOG_FILE #&>>$LOG_FILE only in logs
 VALIDATE $? "nginx"
 
-dnf install mongodb-mongosh -y &>>$LOG_FILE | tee -a $LOG_FILE #&>>$LOG_FILE only in logs
-VALIDATE $? "mongodb"
+dnf install nodejs -y | tee -a $LOG_FILE #&>>$LOG_FILE only in logs
+VALIDATE $? "nodejs"
 
-dnf install python3 -y &>>$LOG_FILE | tee -a $LOG_FILE #&>>$LOG_FILE only in logs
+dnf install python3 -y | tee -a $LOG_FILE #&>>$LOG_FILE only in logs
 VALIDATE $? "python3"
