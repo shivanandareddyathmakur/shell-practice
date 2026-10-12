@@ -8,3 +8,4 @@ echo "home directory of user : $HOME"
 echo "PID of this script: $$"
 sleep 50 & #using & will help the process"sleep 50" to run in background and will go to next line
 echo "PID of the last command in background: $!"
+
