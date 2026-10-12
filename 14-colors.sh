@@ -6,4 +6,4 @@ Y="\e[33m"
 W="\e[0m"
 
 echo -e " $R hello $G swetha $N "
-echo check this color
+echo "check this color"
