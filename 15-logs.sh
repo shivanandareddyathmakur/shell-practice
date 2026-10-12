@@ -26,14 +26,14 @@ VALIDATE(){
     fi
 }
 
-dnf install mysql -y &>>LOG_FILE
+dnf install mysql -y &>>$LOG_FILE
 VALIDATE $? "mysql"
 
-dnf install nginx -y &>>LOG_FILE
+dnf install nginx -y &>>$LOG_FILE
 VALIDATE $? "nginx"
 
-dnf install mongodb -y &>>LOG_FILE
+dnf install mongodb -y &>>$LOG_FILE
 VALIDATE $? "mongodb"
 
-dnf install python3 -y &>>LOG_FILE
+dnf install python3 -y &>>$LOG_FILE
 VALIDATE $? "python3"
