@@ -15,7 +15,7 @@ if [ $USER_ID -ne 0 ]; then
     exit 1
 fi
 
-echo "script started ececuted at $( date )" &>>$LOG_FILE | tee -a $LOG_FILE
+echo "script started ececuted at $( date )" | tee -a $LOG_FILE #&>>$LOG_FILE only in logs
 
 VALIDATE(){
     if [ $1 -ne 0 ]; then
@@ -26,14 +26,15 @@ VALIDATE(){
     fi
 }
 
-dnf install mysql -y &>>$LOG_FILE | tee -a $LOG_FILE
+#if we use tee then it'll dispaly over and will also be saved logs file
+dnf install mysql -y | tee -a $LOG_FILE #&>>$LOG_FILE only in logs
 VALIDATE $? "mysql"
 
-dnf install nginx -y &>>$LOG_FILE | tee -a $LOG_FILE
+dnf install nginx -y | tee -a $LOG_FILE #&>>$LOG_FILE only in logs
 VALIDATE $? "nginx"
 
-dnf install mongodb -y &>>$LOG_FILE | tee -a $LOG_FILE
+dnf install mongodb -y | tee -a $LOG_FILE #&>>$LOG_FILE only in logs
 VALIDATE $? "mongodb"
 
-dnf install python3 -y &>>$LOG_FILE | tee -a $LOG_FILE
+dnf install python3 -y | tee -a $LOG_FILE #&>>$LOG_FILE only in logs
 VALIDATE $? "python3"
