@@ -14,7 +14,7 @@ fi
 VALIDATE(){
     if [ $1 -ne 0 ]; then
         echo -e "$R ERROR $N:: installing $2 has been $R failed $N"
-        exit 1
+        #exit 1 - if you want to dont continue when an failure occurs
     else 
         echo -e "$2 installation is $G successfull $N"
     fi
