@@ -17,6 +17,8 @@ if [ $USER_ID -ne 0 ]; then
     exit 1
 fi
 
+echo "script started ececuted at $( date )"
+
 VALIDATE(){
     if [ $1 -ne 0 ]; then
         echo -e "$R ERROR $N:: installing $2 has been $R failed $N"
