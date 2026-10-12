@@ -33,7 +33,7 @@ VALIDATE $? "mysql"
 dnf install nginx -y | tee -a $LOG_FILE #&>>$LOG_FILE only in logs
 VALIDATE $? "nginx"
 
-dnf install mongodb -y | tee -a $LOG_FILE #&>>$LOG_FILE only in logs
+dnf install mongodb-mongosh -y | tee -a $LOG_FILE #&>>$LOG_FILE only in logs
 VALIDATE $? "mongodb"
 
 dnf install python3 -y | tee -a $LOG_FILE #&>>$LOG_FILE only in logs
