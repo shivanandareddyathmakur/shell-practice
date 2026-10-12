@@ -3,7 +3,7 @@
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
-W="\e[0m"
+N="\e[0m"
 
 echo -e " $R hello $G swetha $N how are you "
-echo -e " $N check this color"
+echo -e " check this color"
