@@ -12,6 +12,7 @@ VALIDATE(){
         exit 1
     else 
         echo "installation is successfull"
+    fi
 }
 
 dnf install mysql -y
