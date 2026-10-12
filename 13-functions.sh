@@ -1,17 +1,22 @@
 #!/bin/bash
 USER_ID=$(id -u)
 
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+W="\e[0m"
+
 if [ $USER_ID -ne 0 ]; then
-    echo "ERROR :: please run this command with root privelege"
+    echo "$R ERROR $N:: please run this command with root privelege"
     exit 1
 fi
 
 VALIDATE(){
     if [ $1 -ne 0 ]; then
-        echo "ERROR:: installing $2 has been failed"
+        echo "$R ERROR $N:: installing $2 has been $R failed $N"
         exit 1
     else 
-        echo "$2 installation is successfull"
+        echo "$2 installation is $G successfull $N"
     fi
 }
 
