@@ -15,7 +15,7 @@ if [ $USER_ID -ne 0 ]; then
     exit 1
 fi
 
-echo "script started ececuted at $( date )"
+echo "script started ececuted at $( date )" &>>$LOG_FILE | tee -a $LOG_FILE
 
 VALIDATE(){
     if [ $1 -ne 0 ]; then
