@@ -10,8 +10,6 @@ SCRIPT_FILE=$( echo $0 |cut -d "." -f1 )
 LOG_FILE="$LOGS_FOLDER/$SCRIPT_FOLDER.log"
 mkdir -p $LOGS_FOLDER
 
-echo "script started ececuted at $( date )"
-
 if [ $USER_ID -ne 0 ]; then
     echo -e "$R ERROR $N:: please run this command with root privelege"
     exit 1
