@@ -29,5 +29,15 @@ VALIDATE(){
 
 for package in $@
 do
-    echo "package is $package"
+    #here to check if package is already installed or not
+    dnf list installed $package
+    VALIDATE $? "$package"
+    
+    #if the exit status is 0 already installed, if -ne to 0, then it'll install
+    if [ $? -ne 0 ]; then
+        dnf install $package -y &>>$LOG_FILE
+        echo "$package $G installed successfully $N"
+    else
+        echo "$package already installed..$Y SKIPPING $N"
+    fi
 done
