@@ -4,3 +4,5 @@ for i in {1..100}
 do
     echo "$i"
 done
+
+#no performance improvement in loops
